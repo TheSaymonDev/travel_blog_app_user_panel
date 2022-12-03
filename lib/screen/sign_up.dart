@@ -1,4 +1,3 @@
-
 import 'package:blog_app/mydb/mydb_helper.dart';
 import 'package:blog_app/screen/sign_in_page.dart';
 import 'package:flutter/material.dart';

@@ -1,5 +1,4 @@
 import 'package:blog_app/mydb/mydb_helper.dart';
-import 'package:blog_app/screen/home_page.dart';
 import 'package:flutter/material.dart';
 
 class SignInPage extends StatefulWidget {
@@ -49,7 +48,7 @@ class _SignInPageState extends State<SignInPage> {
             ElevatedButton(onPressed: () {
               MyDbHelper helper=MyDbHelper();
               helper.signIn(emailController.text, passwordController.text);
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
+              //Navigator.of(context).push(MaterialPageRoute(builder: (context)=>HomePage()));
             }, child: Text('Sign In'))
           ],
         ),

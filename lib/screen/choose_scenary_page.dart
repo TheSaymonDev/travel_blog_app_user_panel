@@ -29,6 +29,7 @@ class _ChooseScenaryPageState extends State<ChooseScenaryPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Spacer(),
             Text(
               'Choose Your',
               style: myStyle(40, FontWeight.bold, textClr),
@@ -37,10 +38,9 @@ class _ChooseScenaryPageState extends State<ChooseScenaryPage> {
               'Favourite Scenary',
               style: myStyle(40, FontWeight.bold, textClr),
             ),
-            SizedBox(height: 10,),
             Container(
-              padding: EdgeInsets.all(20),
-              height: 200,
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              height: MediaQuery.of(context).size.height *.20,
               child: MasonryGridView.count(
                 scrollDirection: Axis.vertical,
                 crossAxisCount: 2,
@@ -77,7 +77,7 @@ class _ChooseScenaryPageState extends State<ChooseScenaryPage> {
               ),
             ),
             Container(
-              height: MediaQuery.of(context).size.height *.40,
+              height: MediaQuery.of(context).size.height *.50,
               child: ListView(
                 children: [
                   CarouselSlider(
@@ -120,7 +120,7 @@ class _ChooseScenaryPageState extends State<ChooseScenaryPage> {
                       ),
                     ],
                     options: CarouselOptions(
-                      height: 280,
+                      height: MediaQuery.of(context).size.height *.45,
                       enlargeCenterPage: true,
                       autoPlay: true,
                       aspectRatio: 16 / 9,

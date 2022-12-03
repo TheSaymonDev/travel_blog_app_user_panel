@@ -1,8 +1,4 @@
 import 'package:blog_app/screen/choose_scenary_page.dart';
-import 'package:blog_app/screen/home_page.dart';
-import 'package:blog_app/screen/sign_up.dart';
-import 'package:blog_app/screen/tab_screen/page1.dart';
-import 'package:blog_app/screen/tab_screen/page2.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
